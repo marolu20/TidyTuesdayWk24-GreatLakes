@@ -16,13 +16,13 @@ By providing data visualizations for information on the weight, age, and conditi
 
 # Data Preprocessing
 
-Once we had downloaded the stocked.csv from the #tidytuesday github repository, we
+Once we downloaded the stocked.csv from the #tidytuesday github repository, we
 uploaded the file into an Rstudio project and loaded the data into a dataframe in our project. Our
 next step was to view the data and explore the distribution of the variables to gain a better
 understanding of what cleansing needed to be done and what variables would be most beneficial
 to use in our R Shiny application. From this analysis, we decided to keep only 'YEAR',
 'MONTH', 'DAY', 'LAKE', 'STATE_PROV', 'SPECIES', 'NO_STOCKED', 'AGEMONTH',
-'WEIGHT', 'CONDITION', and 'STAGE' from the stocked.csv, and left out all other columns
+'WEIGHT', and 'CONDITION' from the stocked.csv, and left out all other columns
 from the file when adding to our dataframe. We found that there were a lot of missing values for
 the columns month, day, and condition, so we replaced those values by inputting the median
 value for each of the columns and substituting any missing values with those medians. There
